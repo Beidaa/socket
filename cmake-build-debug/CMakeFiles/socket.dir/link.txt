@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/socket.dir/5_12.cpp.o -o socket 
+/usr/bin/c++ -g CMakeFiles/socket.dir/dup.cpp.o -o socket 

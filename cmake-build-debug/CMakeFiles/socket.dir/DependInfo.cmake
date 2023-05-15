@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/tmp/tmp.KZtna2J34B/5_12.cpp" "CMakeFiles/socket.dir/5_12.cpp.o" "gcc" "CMakeFiles/socket.dir/5_12.cpp.o.d"
+  "/tmp/tmp.KZtna2J34B/dup.cpp" "CMakeFiles/socket.dir/dup.cpp.o" "gcc" "CMakeFiles/socket.dir/dup.cpp.o.d"
   )
 
 # Targets to which this target links.
