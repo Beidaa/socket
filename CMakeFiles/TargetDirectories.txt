@@ -1,0 +1,3 @@
+/Users/beida/CLionProjects/socket/CMakeFiles/socket.dir
+/Users/beida/CLionProjects/socket/CMakeFiles/edit_cache.dir
+/Users/beida/CLionProjects/socket/CMakeFiles/rebuild_cache.dir
