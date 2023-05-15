@@ -54,10 +54,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/beida/CLionProjects/socket
+CMAKE_SOURCE_DIR = /Users/beida/CLionProjects/c+soc/Makefile
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/beida/CLionProjects/socket
+CMAKE_BINARY_DIR = /Users/beida/CLionProjects/c+soc/Makefile
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/socket.dir/clean
 CMakeFiles/socket.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/beida/CLionProjects/socket/CMakeFiles --progress-num=1,2 "Built target socket"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/beida/CLionProjects/c+soc/Makefile/CMakeFiles --progress-num=1,2 "Built target socket"
 .PHONY : CMakeFiles/socket.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/socket.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/beida/CLionProjects/socket/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/beida/CLionProjects/c+soc/Makefile/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/socket.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/beida/CLionProjects/socket/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/beida/CLionProjects/c+soc/Makefile/CMakeFiles 0
 .PHONY : CMakeFiles/socket.dir/rule
 
 # Convenience name for target.

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/socket.dir/5_6.cpp.o"
-  "CMakeFiles/socket.dir/5_6.cpp.o.d"
+  "CMakeFiles/socket.dir/5_12.cpp.o"
+  "CMakeFiles/socket.dir/5_12.cpp.o.d"
   "socket"
   "socket.pdb"
 )

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/beida/CLionProjects/socket
+# Install script for directory: /Users/beida/CLionProjects/c+soc/Makefile
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/beida/CLionProjects/socket/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/beida/CLionProjects/c+soc/Makefile/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
