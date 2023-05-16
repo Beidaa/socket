@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /tmp/tmp.KZtna2J34B
+CMAKE_SOURCE_DIR = /root/sync/socket
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /tmp/tmp.KZtna2J34B/cmake-build-debug
+CMAKE_BINARY_DIR = /root/sync/socket/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/tmp.KZtna2J34B/cmake-build-debug/CMakeFiles /tmp/tmp.KZtna2J34B/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/sync/socket/cmake-build-debug/CMakeFiles /root/sync/socket/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/tmp.KZtna2J34B/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/sync/socket/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,29 +129,53 @@ socket/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/build
 .PHONY : socket/fast
 
-dup.o: dup.cpp.o
-.PHONY : dup.o
+8_3.o: 8_3.cpp.o
+.PHONY : 8_3.o
 
 # target to build an object file
-dup.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/dup.cpp.o
-.PHONY : dup.cpp.o
+8_3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/8_3.cpp.o
+.PHONY : 8_3.cpp.o
 
-dup.i: dup.cpp.i
-.PHONY : dup.i
+8_3.i: 8_3.cpp.i
+.PHONY : 8_3.i
 
 # target to preprocess a source file
-dup.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/dup.cpp.i
-.PHONY : dup.cpp.i
+8_3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/8_3.cpp.i
+.PHONY : 8_3.cpp.i
 
-dup.s: dup.cpp.s
-.PHONY : dup.s
+8_3.s: 8_3.cpp.s
+.PHONY : 8_3.s
 
 # target to generate assembly for a file
-dup.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/dup.cpp.s
-.PHONY : dup.cpp.s
+8_3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/8_3.cpp.s
+.PHONY : 8_3.cpp.s
+
+server.o: server.c.o
+.PHONY : server.o
+
+# target to build an object file
+server.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/server.c.o
+.PHONY : server.c.o
+
+server.i: server.c.i
+.PHONY : server.i
+
+# target to preprocess a source file
+server.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/server.c.i
+.PHONY : server.c.i
+
+server.s: server.c.s
+.PHONY : server.s
+
+# target to generate assembly for a file
+server.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/server.c.s
+.PHONY : server.c.s
 
 # Help Target
 help:
@@ -162,9 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... socket"
-	@echo "... dup.o"
-	@echo "... dup.i"
-	@echo "... dup.s"
+	@echo "... 8_3.o"
+	@echo "... 8_3.i"
+	@echo "... 8_3.s"
+	@echo "... server.o"
+	@echo "... server.i"
+	@echo "... server.s"
 .PHONY : help
 
 

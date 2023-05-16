@@ -1,4 +1,4 @@
-# Install script for directory: /tmp/tmp.KZtna2J34B
+# Install script for directory: /root/sync/socket
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/tmp/tmp.KZtna2J34B/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/root/sync/socket/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

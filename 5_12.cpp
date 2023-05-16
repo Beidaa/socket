@@ -1,52 +1,42 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-#include <arpa/inet.h>
+#include <iostream>
 #include <sys/socket.h>
+#include <arpa/inet.h>
+#include <cstring>
+#include <cassert>
+#include <unistd.h>
+#include <cstdio>
+#include <cstdlib>
 #include <netdb.h>
 
-int main(int argc, char *argv[]) {
-    struct hostent *hostinfo;
-    if ((hostinfo = gethostbyname("localhost")) == NULL) {  // 获取本机主机信息
-        perror("gethostbyname");
-        exit(EXIT_FAILURE);
-    }
 
-    struct servent *servinfo;
-    if ((servinfo = getservbyname("daytime", "tcp")) == NULL) {  // 获取 daytime 服务信息
-        perror("getservbyname");
-        exit(EXIT_FAILURE);
-    }
+#define BUF_SIZE 1024
 
-    struct sockaddr_in address;
-    memset(&address, 0, sizeof(address));
+
+int main(int argc,char* argv[]) {
+//    assert(argc == 2);
+    char* host = "localhost";
+    //获取目标主机地址信息
+    struct hostent* hostinfo = gethostbyname(host);
+    assert(hostinfo);
+    //获取daytime服务信息
+    struct servent* servinfo = getservbyname("daytime","tcp");
+    assert(servinfo);
+    printf("daytime port is %d\n", ntohs(servinfo->s_port));
+
+    struct sockaddr_in address{};
     address.sin_family = AF_INET;
-    address.sin_port = servinfo->s_port;  // 端口号使用 daytime 服务的端口 13
-    memcpy(&address.sin_addr, hostinfo->h_addr_list[0], hostinfo->h_length);
-
-    int sockfd;
-    if ((sockfd = socket(AF_INET, SOCK_STREAM, 0)) < 0) {  // 创建套接字
-        perror("socket");
-        exit(EXIT_FAILURE);
-    }
-
-    if (connect(sockfd, (struct sockaddr*)&address, sizeof(address)) < 0) {  // 连接到本机的 13 号端口
-        perror("connect");
-        exit(EXIT_FAILURE);
-    }
-
-    char buffer[512];
-    int n = read(sockfd, buffer, sizeof(buffer));  // 读取服务器传回的数据
-    if (n < 0) {
-        perror("read");
-        exit(EXIT_FAILURE);
-    }
-    buffer[n] = '\0';
-
-    printf("%s", buffer);  // 打印时间信息
-
-    close(sockfd);  // 关闭套接字
-
+    address.sin_port = servinfo->s_port;
+    /* 注意下面示码，因为h_addr_list本身是使用网络字节序的地址列表，所以使用其中的IP地址时，
+     * 无须对目标IP地址转换字节序*/
+    address.sin_addr = *(struct in_addr*)*hostinfo->h_addr_list;
+    int sockfd = socket(AF_INET,SOCK_STREAM,0);
+    int result = connect(sockfd,(struct sockaddr*)&address,sizeof (address));
+    assert(result != -1);
+    char buffer[128];
+    result = read(sockfd,buffer,sizeof (buffer));
+    assert(result > 0);
+    buffer[result] = '\0';
+    printf("the day tiem is: %s",buffer);
+    close(sockfd);
     return 0;
 }

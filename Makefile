@@ -129,29 +129,29 @@ socket/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/build
 .PHONY : socket/fast
 
-5_12.o: 5_12.cpp.o
-.PHONY : 5_12.o
+dup.o: dup.cpp.o
+.PHONY : dup.o
 
 # target to build an object file
-5_12.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/5_12.cpp.o
-.PHONY : 5_12.cpp.o
+dup.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/dup.cpp.o
+.PHONY : dup.cpp.o
 
-5_12.i: 5_12.cpp.i
-.PHONY : 5_12.i
+dup.i: dup.cpp.i
+.PHONY : dup.i
 
 # target to preprocess a source file
-5_12.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/5_12.cpp.i
-.PHONY : 5_12.cpp.i
+dup.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/dup.cpp.i
+.PHONY : dup.cpp.i
 
-5_12.s: 5_12.cpp.s
-.PHONY : 5_12.s
+dup.s: dup.cpp.s
+.PHONY : dup.s
 
 # target to generate assembly for a file
-5_12.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/5_12.cpp.s
-.PHONY : 5_12.cpp.s
+dup.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/dup.cpp.s
+.PHONY : dup.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... socket"
-	@echo "... 5_12.o"
-	@echo "... 5_12.i"
-	@echo "... 5_12.s"
+	@echo "... dup.o"
+	@echo "... dup.i"
+	@echo "... dup.s"
 .PHONY : help
 
 

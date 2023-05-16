@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /tmp/tmp.KZtna2J34B
+CMAKE_SOURCE_DIR = /root/sync/socket
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /tmp/tmp.KZtna2J34B/cmake-build-debug
+CMAKE_BINARY_DIR = /root/sync/socket/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/socket.dir/depend.make
@@ -69,31 +69,47 @@ include CMakeFiles/socket.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/socket.dir/flags.make
 
-CMakeFiles/socket.dir/dup.cpp.o: CMakeFiles/socket.dir/flags.make
-CMakeFiles/socket.dir/dup.cpp.o: ../dup.cpp
-CMakeFiles/socket.dir/dup.cpp.o: CMakeFiles/socket.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/tmp.KZtna2J34B/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/socket.dir/dup.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/socket.dir/dup.cpp.o -MF CMakeFiles/socket.dir/dup.cpp.o.d -o CMakeFiles/socket.dir/dup.cpp.o -c /tmp/tmp.KZtna2J34B/dup.cpp
+CMakeFiles/socket.dir/server.c.o: CMakeFiles/socket.dir/flags.make
+CMakeFiles/socket.dir/server.c.o: ../server.c
+CMakeFiles/socket.dir/server.c.o: CMakeFiles/socket.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/sync/socket/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/socket.dir/server.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/socket.dir/server.c.o -MF CMakeFiles/socket.dir/server.c.o.d -o CMakeFiles/socket.dir/server.c.o -c /root/sync/socket/server.c
 
-CMakeFiles/socket.dir/dup.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/socket.dir/dup.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/tmp.KZtna2J34B/dup.cpp > CMakeFiles/socket.dir/dup.cpp.i
+CMakeFiles/socket.dir/server.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/socket.dir/server.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/sync/socket/server.c > CMakeFiles/socket.dir/server.c.i
 
-CMakeFiles/socket.dir/dup.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/socket.dir/dup.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/tmp.KZtna2J34B/dup.cpp -o CMakeFiles/socket.dir/dup.cpp.s
+CMakeFiles/socket.dir/server.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/socket.dir/server.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/sync/socket/server.c -o CMakeFiles/socket.dir/server.c.s
+
+CMakeFiles/socket.dir/8_3.cpp.o: CMakeFiles/socket.dir/flags.make
+CMakeFiles/socket.dir/8_3.cpp.o: ../8_3.cpp
+CMakeFiles/socket.dir/8_3.cpp.o: CMakeFiles/socket.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/sync/socket/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/socket.dir/8_3.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/socket.dir/8_3.cpp.o -MF CMakeFiles/socket.dir/8_3.cpp.o.d -o CMakeFiles/socket.dir/8_3.cpp.o -c /root/sync/socket/8_3.cpp
+
+CMakeFiles/socket.dir/8_3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/socket.dir/8_3.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/sync/socket/8_3.cpp > CMakeFiles/socket.dir/8_3.cpp.i
+
+CMakeFiles/socket.dir/8_3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/socket.dir/8_3.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/sync/socket/8_3.cpp -o CMakeFiles/socket.dir/8_3.cpp.s
 
 # Object files for target socket
 socket_OBJECTS = \
-"CMakeFiles/socket.dir/dup.cpp.o"
+"CMakeFiles/socket.dir/server.c.o" \
+"CMakeFiles/socket.dir/8_3.cpp.o"
 
 # External object files for target socket
 socket_EXTERNAL_OBJECTS =
 
-socket: CMakeFiles/socket.dir/dup.cpp.o
+socket: CMakeFiles/socket.dir/server.c.o
+socket: CMakeFiles/socket.dir/8_3.cpp.o
 socket: CMakeFiles/socket.dir/build.make
 socket: CMakeFiles/socket.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/tmp/tmp.KZtna2J34B/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable socket"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/sync/socket/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable socket"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/socket.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -105,6 +121,6 @@ CMakeFiles/socket.dir/clean:
 .PHONY : CMakeFiles/socket.dir/clean
 
 CMakeFiles/socket.dir/depend:
-	cd /tmp/tmp.KZtna2J34B/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /tmp/tmp.KZtna2J34B /tmp/tmp.KZtna2J34B /tmp/tmp.KZtna2J34B/cmake-build-debug /tmp/tmp.KZtna2J34B/cmake-build-debug /tmp/tmp.KZtna2J34B/cmake-build-debug/CMakeFiles/socket.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/sync/socket/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/sync/socket /root/sync/socket /root/sync/socket/cmake-build-debug /root/sync/socket/cmake-build-debug /root/sync/socket/cmake-build-debug/CMakeFiles/socket.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/socket.dir/depend
 

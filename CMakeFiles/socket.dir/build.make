@@ -69,28 +69,28 @@ include CMakeFiles/socket.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/socket.dir/flags.make
 
-CMakeFiles/socket.dir/5_12.cpp.o: CMakeFiles/socket.dir/flags.make
-CMakeFiles/socket.dir/5_12.cpp.o: 5_12.cpp
-CMakeFiles/socket.dir/5_12.cpp.o: CMakeFiles/socket.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/beida/CLionProjects/c+soc/Makefile/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/socket.dir/5_12.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/socket.dir/5_12.cpp.o -MF CMakeFiles/socket.dir/5_12.cpp.o.d -o CMakeFiles/socket.dir/5_12.cpp.o -c /Users/beida/CLionProjects/c+soc/Makefile/5_12.cpp
+CMakeFiles/socket.dir/dup.cpp.o: CMakeFiles/socket.dir/flags.make
+CMakeFiles/socket.dir/dup.cpp.o: dup.cpp
+CMakeFiles/socket.dir/dup.cpp.o: CMakeFiles/socket.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/beida/CLionProjects/c+soc/Makefile/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/socket.dir/dup.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/socket.dir/dup.cpp.o -MF CMakeFiles/socket.dir/dup.cpp.o.d -o CMakeFiles/socket.dir/dup.cpp.o -c /Users/beida/CLionProjects/c+soc/Makefile/dup.cpp
 
-CMakeFiles/socket.dir/5_12.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/socket.dir/5_12.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/beida/CLionProjects/c+soc/Makefile/5_12.cpp > CMakeFiles/socket.dir/5_12.cpp.i
+CMakeFiles/socket.dir/dup.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/socket.dir/dup.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/beida/CLionProjects/c+soc/Makefile/dup.cpp > CMakeFiles/socket.dir/dup.cpp.i
 
-CMakeFiles/socket.dir/5_12.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/socket.dir/5_12.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/beida/CLionProjects/c+soc/Makefile/5_12.cpp -o CMakeFiles/socket.dir/5_12.cpp.s
+CMakeFiles/socket.dir/dup.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/socket.dir/dup.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/beida/CLionProjects/c+soc/Makefile/dup.cpp -o CMakeFiles/socket.dir/dup.cpp.s
 
 # Object files for target socket
 socket_OBJECTS = \
-"CMakeFiles/socket.dir/5_12.cpp.o"
+"CMakeFiles/socket.dir/dup.cpp.o"
 
 # External object files for target socket
 socket_EXTERNAL_OBJECTS =
 
-socket: CMakeFiles/socket.dir/5_12.cpp.o
+socket: CMakeFiles/socket.dir/dup.cpp.o
 socket: CMakeFiles/socket.dir/build.make
 socket: CMakeFiles/socket.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/beida/CLionProjects/c+soc/Makefile/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable socket"
