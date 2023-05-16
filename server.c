@@ -14,45 +14,45 @@
 #include <fcntl.h> // 包含文件控制相关的头文件
 
 #define BUFFER_SIZE 1024
-void distributeMessage(int sock_client, char* msg);
-int accountProcess(char* msg, int msg_socket);
-void processMessage(char* msg, int msg_socket);
+void distributeMessage(int sock_client, char* msg); // 声明一个函数，用于向其他客户端分发消息
+int accountProcess(char* msg, int msg_socket); // 声明一个函数，用于处理账户登录或注册的消息
+void processMessage(char* msg, int msg_socket); // 声明一个函数，用于处理客户端发送的消息
 
-int accountLogin(char* username, char* password, int msg_socket);
-void accountCreate(char* username, char* password);
+int accountLogin(char* username, char* password, int msg_socket); // 声明一个函数，用于验证账户登录是否成功
+void accountCreate(char* username, char* password); // 声明一个函数，用于创建新账户
 
-struct user {
-    char nikename[10];
-    char username[10];
-    char password[16];
-    int status;
+struct user { // 定义一个结构体，表示用户信息
+    char nikename[10]; // 用户昵称，最多10个字符
+    char username[10]; // 用户名，最多10个字符
+    char password[16]; // 密码，最多16个字符
+    int status; // 用户状态，0表示离线，1表示在线
 };
 
-struct online_user {
-    char nikename[10];
-    int sockfd;
-    int status;
+struct online_user { // 定义一个结构体，表示在线用户信息
+    char nikename[10]; // 用户昵称，最多10个字符
+    int sockfd; // 用户对应的套接字描述符
+    int status; // 用户状态，0表示离线，1表示在线
 };
 
-struct user users[100];
-struct online_user online_users[100];
-int sum_user = -1;
-int sum_online_user = -1;
+struct user users[100]; // 定义一个数组，存储最多100个用户信息
+struct online_user online_users[100]; // 定义一个数组，存储最多100个在线用户信息
+int sum_user = -1; // 定义一个变量，表示当前用户数量，默认为-1
+int sum_online_user = -1; // 定义一个变量，表示当前在线用户数量，默认为-1
 
-int main(int argc, char* argv[]) {
+int main(int argc, char* argv[]) { // 定义主函数
 
-    if(argc <= 2) {
-        printf("Wrong number of parameters!\n");
-        return 1;
+    if(argc <= 2) { // 如果参数数量小于等于2（即没有指定IP地址和端口号）
+        printf("Wrong number of parameters!\n"); // 打印错误信息
+        return 1; // 返回1表示异常退出
     }
 
-    char* ip = argv[1];
-    int port = atoi(argv[2]);
-    struct sockaddr_in address_server, address_client;
-    memset(&address_server, 0, sizeof(address_server));
-    address_server.sin_family = AF_INET;
-    address_server.sin_port = htons(port);
-    inet_pton(AF_INET, ip, &address_server.sin_addr);
+    char* ip = argv[1]; // 获取第一个参数作为IP地址
+    int port = atoi(argv[2]); // 获取第二个参数作为端口号，并转换为整数类型
+    struct sockaddr_in address_server, address_client; // 定义两个结构体变量，分别表示服务器和客户端的地址信息
+    memset(&address_server, 0, sizeof(address_server)); // 将服务器地址信息初始化为0
+    address_server.sin_family = AF_INET; // 设置服务器地址信息的协议族为IPv4
+    address_server.sin_port = htons(port); // 设置服务器地址信息的端口号，并转换为网络字节序
+    inet_pton(AF_INET, ip, &address_server.sin_addr); // 将IP地址从字符串格式转换为二进制格式，并存储到服务器地址信息中
 
     int sock_server = socket(PF_INET, SOCK_STREAM, 0);
     assert(sock_server >= 0);
