@@ -129,30 +129,6 @@ socket/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/build
 .PHONY : socket/fast
 
-8_3.o: 8_3.cpp.o
-.PHONY : 8_3.o
-
-# target to build an object file
-8_3.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/8_3.cpp.o
-.PHONY : 8_3.cpp.o
-
-8_3.i: 8_3.cpp.i
-.PHONY : 8_3.i
-
-# target to preprocess a source file
-8_3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/8_3.cpp.i
-.PHONY : 8_3.cpp.i
-
-8_3.s: 8_3.cpp.s
-.PHONY : 8_3.s
-
-# target to generate assembly for a file
-8_3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/8_3.cpp.s
-.PHONY : 8_3.cpp.s
-
 server.o: server.c.o
 .PHONY : server.o
 
@@ -186,9 +162,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... socket"
-	@echo "... 8_3.o"
-	@echo "... 8_3.i"
-	@echo "... 8_3.s"
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"

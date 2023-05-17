@@ -82,9 +82,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/root/sync/socket/8_3.cpp">
-			<Option target="socket"/>
-		</Unit>
 		<Unit filename="/root/sync/socket/server.c">
 			<Option target="socket"/>
 		</Unit>

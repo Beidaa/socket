@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/socket.dir/server.c.o CMakeFiles/socket.dir/8_3.cpp.o -o socket 
+/usr/bin/cc -g CMakeFiles/socket.dir/server.c.o -o socket 
