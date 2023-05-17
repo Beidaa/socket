@@ -129,29 +129,53 @@ socket/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/build
 .PHONY : socket/fast
 
-server.o: server.c.o
-.PHONY : server.o
+9-epoll.o: 9-epoll.cpp.o
+.PHONY : 9-epoll.o
 
 # target to build an object file
-server.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/server.c.o
-.PHONY : server.c.o
+9-epoll.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/9-epoll.cpp.o
+.PHONY : 9-epoll.cpp.o
 
-server.i: server.c.i
-.PHONY : server.i
+9-epoll.i: 9-epoll.cpp.i
+.PHONY : 9-epoll.i
 
 # target to preprocess a source file
-server.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/server.c.i
-.PHONY : server.c.i
+9-epoll.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/9-epoll.cpp.i
+.PHONY : 9-epoll.cpp.i
 
-server.s: server.c.s
-.PHONY : server.s
+9-epoll.s: 9-epoll.cpp.s
+.PHONY : 9-epoll.s
 
 # target to generate assembly for a file
-server.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/server.c.s
-.PHONY : server.c.s
+9-epoll.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/9-epoll.cpp.s
+.PHONY : 9-epoll.cpp.s
+
+9_5.o: 9_5.cpp.o
+.PHONY : 9_5.o
+
+# target to build an object file
+9_5.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/9_5.cpp.o
+.PHONY : 9_5.cpp.o
+
+9_5.i: 9_5.cpp.i
+.PHONY : 9_5.i
+
+# target to preprocess a source file
+9_5.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/9_5.cpp.i
+.PHONY : 9_5.cpp.i
+
+9_5.s: 9_5.cpp.s
+.PHONY : 9_5.s
+
+# target to generate assembly for a file
+9_5.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/9_5.cpp.s
+.PHONY : 9_5.cpp.s
 
 # Help Target
 help:
@@ -162,9 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... socket"
-	@echo "... server.o"
-	@echo "... server.i"
-	@echo "... server.s"
+	@echo "... 9-epoll.o"
+	@echo "... 9-epoll.i"
+	@echo "... 9-epoll.s"
+	@echo "... 9_5.o"
+	@echo "... 9_5.i"
+	@echo "... 9_5.s"
 .PHONY : help
 
 

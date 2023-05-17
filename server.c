@@ -1,6 +1,6 @@
 
 
-//C/S 模型
+//C/S
 #define _GNU_SOURCE 1
 
 #include <sys/types.h> // 包含系统类型定义的头文件
