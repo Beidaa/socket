@@ -98,13 +98,20 @@ int unblock_connect(const char* ip, int port, int time) {
 }
 
 int main(int argc, char* argv[]) {
-    const char* ip = "192.168.9.35";
-    int port = atoi(argv[1]);
+    const char* ip = "172.18.0.2";
+//    const char* ip = "127.0.0.1";
+    int port = atoi("1235");
 
     int sockfd = unblock_connect(ip, port, 10);
-    if(sockfd < 0) {
-        return 1;
-    }
+    int sockfd2 = unblock_connect(ip, port, 10);
+    char* buff="cddk";
+    char* buff2="cdddsdsdsdsk";
+    send(sockfd,buff,strlen (buff),0);
+    sleep(3);
+    send(sockfd2,buff2,strlen (buff2),0);
+//    if(sockfd < 0) {
+//        return 1;
+//    }
 
     return 0;
 }

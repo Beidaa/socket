@@ -82,10 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/root/sync/socket/9-epoll.cpp">
-			<Option target="socket"/>
-		</Unit>
-		<Unit filename="/root/sync/socket/9_5.cpp">
+		<Unit filename="/root/sync/socket/chatroom_server.cpp">
 			<Option target="socket"/>
 		</Unit>
 		<Unit filename="/root/sync/socket/CMakeLists.txt">

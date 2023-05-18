@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/socket.dir/9-epoll.cpp.o"
-  "CMakeFiles/socket.dir/9-epoll.cpp.o.d"
-  "CMakeFiles/socket.dir/9_5.cpp.o"
-  "CMakeFiles/socket.dir/9_5.cpp.o.d"
+  "CMakeFiles/socket.dir/chatroom_server.cpp.o"
+  "CMakeFiles/socket.dir/chatroom_server.cpp.o.d"
   "socket"
   "socket.pdb"
 )

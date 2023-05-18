@@ -129,53 +129,29 @@ socket/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/build
 .PHONY : socket/fast
 
-9-epoll.o: 9-epoll.cpp.o
-.PHONY : 9-epoll.o
+chatroom_server.o: chatroom_server.cpp.o
+.PHONY : chatroom_server.o
 
 # target to build an object file
-9-epoll.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/9-epoll.cpp.o
-.PHONY : 9-epoll.cpp.o
+chatroom_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/chatroom_server.cpp.o
+.PHONY : chatroom_server.cpp.o
 
-9-epoll.i: 9-epoll.cpp.i
-.PHONY : 9-epoll.i
-
-# target to preprocess a source file
-9-epoll.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/9-epoll.cpp.i
-.PHONY : 9-epoll.cpp.i
-
-9-epoll.s: 9-epoll.cpp.s
-.PHONY : 9-epoll.s
-
-# target to generate assembly for a file
-9-epoll.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/9-epoll.cpp.s
-.PHONY : 9-epoll.cpp.s
-
-9_5.o: 9_5.cpp.o
-.PHONY : 9_5.o
-
-# target to build an object file
-9_5.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/9_5.cpp.o
-.PHONY : 9_5.cpp.o
-
-9_5.i: 9_5.cpp.i
-.PHONY : 9_5.i
+chatroom_server.i: chatroom_server.cpp.i
+.PHONY : chatroom_server.i
 
 # target to preprocess a source file
-9_5.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/9_5.cpp.i
-.PHONY : 9_5.cpp.i
+chatroom_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/chatroom_server.cpp.i
+.PHONY : chatroom_server.cpp.i
 
-9_5.s: 9_5.cpp.s
-.PHONY : 9_5.s
+chatroom_server.s: chatroom_server.cpp.s
+.PHONY : chatroom_server.s
 
 # target to generate assembly for a file
-9_5.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/9_5.cpp.s
-.PHONY : 9_5.cpp.s
+chatroom_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/socket.dir/build.make CMakeFiles/socket.dir/chatroom_server.cpp.s
+.PHONY : chatroom_server.cpp.s
 
 # Help Target
 help:
@@ -186,12 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... socket"
-	@echo "... 9-epoll.o"
-	@echo "... 9-epoll.i"
-	@echo "... 9-epoll.s"
-	@echo "... 9_5.o"
-	@echo "... 9_5.i"
-	@echo "... 9_5.s"
+	@echo "... chatroom_server.o"
+	@echo "... chatroom_server.i"
+	@echo "... chatroom_server.s"
 .PHONY : help
 
 

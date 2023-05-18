@@ -69,47 +69,31 @@ include CMakeFiles/socket.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/socket.dir/flags.make
 
-CMakeFiles/socket.dir/9-epoll.cpp.o: CMakeFiles/socket.dir/flags.make
-CMakeFiles/socket.dir/9-epoll.cpp.o: ../9-epoll.cpp
-CMakeFiles/socket.dir/9-epoll.cpp.o: CMakeFiles/socket.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/sync/socket/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/socket.dir/9-epoll.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/socket.dir/9-epoll.cpp.o -MF CMakeFiles/socket.dir/9-epoll.cpp.o.d -o CMakeFiles/socket.dir/9-epoll.cpp.o -c /root/sync/socket/9-epoll.cpp
+CMakeFiles/socket.dir/chatroom_server.cpp.o: CMakeFiles/socket.dir/flags.make
+CMakeFiles/socket.dir/chatroom_server.cpp.o: ../chatroom_server.cpp
+CMakeFiles/socket.dir/chatroom_server.cpp.o: CMakeFiles/socket.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/sync/socket/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/socket.dir/chatroom_server.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/socket.dir/chatroom_server.cpp.o -MF CMakeFiles/socket.dir/chatroom_server.cpp.o.d -o CMakeFiles/socket.dir/chatroom_server.cpp.o -c /root/sync/socket/chatroom_server.cpp
 
-CMakeFiles/socket.dir/9-epoll.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/socket.dir/9-epoll.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/sync/socket/9-epoll.cpp > CMakeFiles/socket.dir/9-epoll.cpp.i
+CMakeFiles/socket.dir/chatroom_server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/socket.dir/chatroom_server.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/sync/socket/chatroom_server.cpp > CMakeFiles/socket.dir/chatroom_server.cpp.i
 
-CMakeFiles/socket.dir/9-epoll.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/socket.dir/9-epoll.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/sync/socket/9-epoll.cpp -o CMakeFiles/socket.dir/9-epoll.cpp.s
-
-CMakeFiles/socket.dir/9_5.cpp.o: CMakeFiles/socket.dir/flags.make
-CMakeFiles/socket.dir/9_5.cpp.o: ../9_5.cpp
-CMakeFiles/socket.dir/9_5.cpp.o: CMakeFiles/socket.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/sync/socket/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/socket.dir/9_5.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/socket.dir/9_5.cpp.o -MF CMakeFiles/socket.dir/9_5.cpp.o.d -o CMakeFiles/socket.dir/9_5.cpp.o -c /root/sync/socket/9_5.cpp
-
-CMakeFiles/socket.dir/9_5.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/socket.dir/9_5.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/sync/socket/9_5.cpp > CMakeFiles/socket.dir/9_5.cpp.i
-
-CMakeFiles/socket.dir/9_5.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/socket.dir/9_5.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/sync/socket/9_5.cpp -o CMakeFiles/socket.dir/9_5.cpp.s
+CMakeFiles/socket.dir/chatroom_server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/socket.dir/chatroom_server.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/sync/socket/chatroom_server.cpp -o CMakeFiles/socket.dir/chatroom_server.cpp.s
 
 # Object files for target socket
 socket_OBJECTS = \
-"CMakeFiles/socket.dir/9-epoll.cpp.o" \
-"CMakeFiles/socket.dir/9_5.cpp.o"
+"CMakeFiles/socket.dir/chatroom_server.cpp.o"
 
 # External object files for target socket
 socket_EXTERNAL_OBJECTS =
 
-socket: CMakeFiles/socket.dir/9-epoll.cpp.o
-socket: CMakeFiles/socket.dir/9_5.cpp.o
+socket: CMakeFiles/socket.dir/chatroom_server.cpp.o
 socket: CMakeFiles/socket.dir/build.make
 socket: CMakeFiles/socket.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/sync/socket/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable socket"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/sync/socket/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable socket"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/socket.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
