@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/root/sync/socket/chatroom_server.cpp" "CMakeFiles/socket.dir/chatroom_server.cpp.o" "gcc" "CMakeFiles/socket.dir/chatroom_server.cpp.o.d"
+  "/root/sync/socket/13-4.cpp" "CMakeFiles/socket.dir/13-4.cpp.o" "gcc" "CMakeFiles/socket.dir/13-4.cpp.o.d"
   )
 
 # Targets to which this target links.
